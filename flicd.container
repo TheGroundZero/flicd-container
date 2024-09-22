@@ -6,6 +6,7 @@ RequiresMountsFor=%t/containers
 
 [Container]
 Image=https://ghcr.io/TheGroundZero/flicd:latest
+Exec=
 ContainerName=flicd
 Network=host
 Volume=flicd.volume:/config
