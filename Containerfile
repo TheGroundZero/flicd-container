@@ -1,8 +1,7 @@
 ARG ALPINE_VERSION=latest
 FROM alpine:${ALPINE_VERSION}
 
-MAINTAINER TheGroundZero <2406013+TheGroundZero@users.noreply.github.com>
-
+LABEL org.opencontainers.image.authors="TheGroundZero <2406013+TheGroundZero@users.noreply.github.com>"
 LABEL org.opencontainers.image.source=https://github.com/TheGroundZero/flicd-container
 LABEL org.opencontainers.image.description="Container for flic daemon"
 LABEL org.opencontainers.image.licenses=MIT
