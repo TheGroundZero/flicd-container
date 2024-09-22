@@ -1,6 +1,4 @@
 ARG ALPINE_VERSION=latest
-ENV ARCH=x86_64
-
 FROM alpine:${ALPINE_VERSION}
 
 MAINTAINER TheGroundZero <2406013+TheGroundZero@users.noreply.github.com>
@@ -8,6 +6,8 @@ MAINTAINER TheGroundZero <2406013+TheGroundZero@users.noreply.github.com>
 LABEL org.opencontainers.image.source=https://github.com/TheGroundZero/flicd-container
 LABEL org.opencontainers.image.description="Container for flic daemon"
 LABEL org.opencontainers.image.licenses=MIT
+
+ENV ARCH=x86_64
 
 RUN apk --no-cache --virtual deps add git && \
     git clone https://github.com/50ButtonsEach/fliclib-linux-hci /tmp/src && \
